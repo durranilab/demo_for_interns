@@ -1,48 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState } from 'react';
-import MyButton from './MyButton'
-import Details from './Details'
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect, useState } from "react";
+import MyButton from "./MyButton";
+import Details from "./Details";
 
 function App() {
-
-  const [name,setName] = useState("")
-  const [address,setAddress] = useState("")
-  const [phoneNum,setPhoneNum] = useState("")
-  
-  const [tempData,setTempData] = useState([])
-
-  const addToList = () =>{
-    const newList = tempData.concat({ name,address,phoneNum });
-    setTempData(newList)
-  }
-
   return (
     <div className="App">
-      <div className='bg-red-100'>
-        <h1 className='text-4xl text-center mt-12'>Student Form</h1>
+      <div className="flex justify-between p-12 items-center">
+        <div className="justify-between flex items-center">
+          <div className="text-black text font-bold cursor-pointer hover:text-gray-700">
+            Tableblocks
+          </div>
+          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
+            About
+          </div>
+          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
+            Templated
+          </div>
+          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
+            Feautures
+          </div>
+          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
+            Pricing
+          </div>
+          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
+            FAQ
+          </div>
+        </div>
 
-          <form className='flex flex-col p-24'>
+        <div>
+          <button className="bg-yellow-500 text-black font-bold px-6 py-2 rounded-xl ml-4">
+            Dahsboard
+          </button>
+        </div>
+      </div>
 
-      <label className='font-bold'>Name</label>
-      <input type='text' id='name' onChange={(e)=>{setName(e.target.value)}} />
+      <div className="bg-yellow-500 p-8 m-12 rounded-xl">
+        <div className="flex justify-between	">
+          <div className="max-w-72 font-mono">
+            <div className="text-4xl font-bold">
+              The easiest way of turnign text into videos
+            </div>
 
-      <label className='font-bold'>Address</label>
-      <input type='text' id='address' onChange={(e)=>{setAddress(e.target.value)}}/>
+            <div className="mt-12 font-bold">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </div>
 
-      <label className='font-bold'>Phone</label>
-      <input type='number' id='phone' onChange={(e)=>{setPhoneNum(e.target.value)}}/>
+            <button className="bg-black text-white w-full mt-12">
+              Try it yourself
+            </button>
+          </div>
 
-      <img src={logo} className='w-24 m-8 bg-white shadow-xl hover:shadow cursor-pointer p-6 rounded-xl'/>
-
-    {/* <MyButton onClick={}/> */}
-
-    <button type='button' className='bg-red-500  p-2 m-2 text-white' onClick={()=>addToList()}>Add</button>
-
-    <Details listData={tempData}/>
-
-          </form>
- 
+          <div className="p-12">
+            <img
+              className="rounded-2xl border-2 border-black w-96"
+              src="https://m.media-amazon.com/images/I/71u3F2NZ9gL.jpg"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
