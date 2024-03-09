@@ -3,66 +3,76 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import MyButton from "./MyButton";
 import Details from "./Details";
+import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="flex justify-between p-12 items-center">
+    <div className="App max-w-6xl mx-auto ">
+      <div className="flex justify-between p-8 items-center">
         <div className="justify-between flex items-center">
-          <div className="text-black text font-bold cursor-pointer hover:text-gray-700">
-            Tableblocks
+
+          <div className="text-indigo-900 text  cursor-pointer hover:text-gray-700">
+            Home
           </div>
-          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
+          <div className="ml-8 text-indigo-900 text  cursor-pointer hover:text-gray-700">
             About
           </div>
-          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
-            Templated
+          <div className="ml-8 text-indigo-900 text  cursor-pointer hover:text-gray-700">
+            Contact
           </div>
-          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
-            Feautures
-          </div>
-          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
-            Pricing
-          </div>
-          <div className="ml-8 text-black text font-bold cursor-pointer hover:text-gray-700">
-            FAQ
-          </div>
+      
         </div>
 
+        <div className="ml-8 text-indigo-900 text-2xl font-bold cursor-pointer hover:text-gray-700">
+            Heading
+          </div>
+
         <div>
-          <button className="bg-yellow-500 text-black font-bold px-6 py-2 rounded-xl ml-4">
-            Dahsboard
+          <button className="bg-indigo-900 text-white px-16 py-1 rounded ml-4">
+            Buy Now
           </button>
         </div>
       </div>
 
-      <div className="bg-yellow-500 p-8 m-12 rounded-xl">
-        <div className="flex justify-between	">
-          <div className="max-w-72 font-mono">
-            <div className="text-4xl font-bold">
+        <div className="mt-16 mb-16 py-16 flex justify-between	items-center ">
+          <div className="max-w-xl">
+            <div className="text-5xl text-indigo-950 font-bold">
               The easiest way of turnign text into videos
             </div>
 
-            <div className="mt-12 font-bold">
+            <div className="mt-12 text-indigo-900">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </div>
 
-            <button className="bg-black text-white w-full mt-12">
+          <div className="flex gap-4 max-w-md mt-8" >
+          <button className="bg-indigo-900 text-white w-full mt-12">
               Try it yourself
+            </button>
+
+            <button className="border-2 border-indigo-900 text-indigo-900 w-full mt-12">
+              Learn More
             </button>
           </div>
 
-          <div className="p-12">
-            <img
-              className="rounded-2xl border-2 border-black w-96"
-              src="https://m.media-amazon.com/images/I/71u3F2NZ9gL.jpg"
-            />
           </div>
-        </div>
+
+        
       </div>
+
+
+<SectionTwo/>
+
+<SectionThree/>
+
+<SectionFour/>
+
+
     </div>
   );
 }
