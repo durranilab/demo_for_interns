@@ -1,5 +1,6 @@
 import React from "react";
-import bg from "./bg.svg"
+import bg from "./images/bg.svg"
+import book from "./images/book.png"
 import Card from "./Card";
 
 function SectionTwo (){
@@ -30,15 +31,15 @@ function SectionTwo (){
 
 <div className="grid grid-cols-2 gap-2 mt-8">
 
-<Card title={"The easiest way of"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"} image={bg}/>
+<Card title={"The easiest way of"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"} image={book}/>
 
-<Card title={"The easiest way of"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"} image={bg}/>
+<Card title={"The easiest way of"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"} image={book}/>
 
 </div>
 
 </div>
 <div>
-<img src={bg}/>
+<img src={bg} style={{width: "400px"}}/>
 </div>
 
 </div>

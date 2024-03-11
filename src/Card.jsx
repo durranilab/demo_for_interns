@@ -8,16 +8,17 @@ function Card ({title,image,description}){
 
     return<>
     
-    <div className="mt-4 max-w-sm flex flex-col gap-2">
+<div className="mt-4 max-w-sm flex flex-col gap-2">
     <div className="w-16">
-        <img src={image}/>
+        <img src={image} />
     </div>
-<div className="font-bold" onClick={()=>{showAlert(title)}}>{title}</div>
-<div className="text-xs">
-      {description}
- </div>
 
- 
+    <div className="font-bold" onClick={()=>
+        {showAlert(title)}}>{title}</div>
+
+    <div className="text-xs">
+      {description}
+     </div> 
 
 </div>
     

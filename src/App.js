@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./images/logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import MyButton from "./MyButton";
@@ -11,22 +11,22 @@ import SectionFour from "./SectionFour";
 function App() {
   return (
     <div className="App max-w-6xl mx-auto ">
-      <div className="flex justify-between p-8 items-center">
+      <div className="sm:flex justify-between p-8 items-center">
         <div className="justify-between flex items-center">
 
-          <div className="text-indigo-900 text  cursor-pointer hover:text-gray-700">
+          <div className="transition-all cursor-pointer hover:text-indigo-700 hover:border-b hover:border-t border-indigo-950 hover:scale-110">
             Home
           </div>
-          <div className="ml-8 text-indigo-900 text  cursor-pointer hover:text-gray-700">
+          <div className="ml-8 transition-all cursor-pointer hover:text-indigo-700 hover:border-b hover:border-t border-indigo-950 hover:scale-110">
             About
           </div>
-          <div className="ml-8 text-indigo-900 text  cursor-pointer hover:text-gray-700">
+          <div className="ml-8 transition-all cursor-pointer hover:text-indigo-700 hover:border-b hover:border-t border-indigo-950 hover:scale-110">
             Contact
           </div>
       
         </div>
-
-        <div className="ml-8 text-indigo-900 text-2xl font-bold cursor-pointer hover:text-gray-700">
+ 
+          <div className="ml-8 text-indigo-900 text-2xl font-bold cursor-pointer hover:text-gray-700">
             Heading
           </div>
 
@@ -40,7 +40,7 @@ function App() {
         <div className="mt-16 mb-16 py-16 flex justify-between	items-center ">
           <div className="max-w-xl">
             <div className="text-5xl text-indigo-950 font-bold">
-              The easiest way of turnign text into videos
+              The easiest way of turning text into videos
             </div>
 
             <div className="mt-12 text-indigo-900">
