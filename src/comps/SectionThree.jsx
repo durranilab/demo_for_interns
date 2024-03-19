@@ -1,11 +1,11 @@
 import React from "react";
-import bg from "./images/bg.svg"
+import bg from "../images/bg.svg"
 import Tile from "./Tile";
 
-import i1 from "./images/i1.svg"
-import i2 from "./images/i2.svg"
-import i3 from "./images/i3.svg"
-import i4 from "./images/i4.svg"
+import i1 from "../images/i1.svg"
+import i2 from "../images/i2.svg"
+import i3 from "../images/i3.svg"
+import i4 from "../images/i4.svg"
 
 function SectionThree (){
 

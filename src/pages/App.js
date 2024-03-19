@@ -1,11 +1,11 @@
 import logo from "../images/logo.svg"
 import "../App.css";
 import { useEffect, useState } from "react";
-import MyButton from "../MyButton";
-import Details from "../Details";
-import SectionTwo from "../SectionTwo";
-import SectionThree from "../SectionThree";
-import SectionFour from "../SectionFour";
+import MyButton from "../comps/MyButton";
+import Details from "../comps/Details";
+import SectionTwo from "../comps/SectionTwo";
+import SectionThree from "../comps/SectionThree";
+import SectionFour from "../comps/SectionFour";
 import { Link } from "react-router-dom";
 
 

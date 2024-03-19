@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "./images/bg.svg"
+import bg from "../images/bg.svg"
 
 function SectionFour (){
 

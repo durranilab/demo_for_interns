@@ -1,6 +1,6 @@
 import React from "react";
-import bg from "./images/bg.svg"
-import book from "./images/book.png"
+import bg from "../images/bg.svg"
+import book from "../images/book.png"
 import Card from "./Card";
 
 function SectionTwo (){
