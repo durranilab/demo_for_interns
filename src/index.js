@@ -10,9 +10,10 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NavBar from './pages/NavBar';
 import Account, { loader } from './pages/Account';
-
+import Form from './pages/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: "/",
-        element: <App/>,
+        element: <Form/>,
       },
       {
         path:"/about",
@@ -48,6 +49,6 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+   <RouterProvider router={router}/>
   </React.StrictMode>
 );
