@@ -57,6 +57,8 @@ function App() {
               {quote}
             </div>
 
+
+
             <div className="mt-12 text-indigo-900">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
